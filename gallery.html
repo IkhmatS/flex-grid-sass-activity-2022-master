@@ -25,6 +25,7 @@
 
         grid-template-columns: repeat(auto-fill, 300px);
       }*/
+      /*you can change it into */
         grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
 
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -33,6 +34,10 @@
       img {
         width: 100%;
         height: 100%;
+      }
+      #infront {
+        grid-area: 1 / 2 / 3 / 4;
+        /*or use: span 2/ span 2/*/
       }
     </style>
   </head>
@@ -55,18 +60,18 @@
     <main>
       <h2>CSS Grid Photo Gallery</h2>
       <section>
-        <img src="images/ballib.png" />
-        <img src="images/bedlib.png" />
-        <img src="images/donelib.png" />
-        <img src="images/greenlib.png" />
-        <img src="images/infrontlib.png" />
-        <img src="images/insuiteread.png" />
-        <img src="images/nightlib.png" />
-        <img src="images/nightlightlib.png" />
-        <img src="images/outdoorlib.png" />
-        <img src="images/sparklib.png" />
-        <img src="images/spooklib.png" />
-        <img src="images/ontopofbal.png" />
+        <img src="images/ballib.png" id="ball" />
+        <img src="images/bedlib.png" id="bed" />
+        <img src="images/donelib.png" id="done" />
+        <img src="images/greenlib.png" id="green" />
+        <img src="images/infrontlib.png" id="infront" />
+        <img src="images/insuiteread.png" id="insuit" />
+        <img src="images/nightlib.png" id="nightlight" />
+        <img src="images/nightlightlib.png" id="nightlib" />
+        <img src="images/outdoorlib.png" id="out" />
+        <img src="images/sparklib.png" id="spark" />
+        <img src="images/spooklib.png" id="spook" />
+        <img src="images/ontopofbal.png" id="pofbal" />
       </section>
     </main>
   </body>
