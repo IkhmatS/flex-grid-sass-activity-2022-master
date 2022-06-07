@@ -30,15 +30,23 @@
       }
 
       input[type="submit"] {
-        grid-column: form-labels / span 2;
+        grid-column: 1 / span 2;
       }
 
       @media all and (max-width: 700px) {
         form {
+          grid-template-rows: repeat(auto-fit, max-content);
           grid-template-columns: 1fr;
+
+          gap: 3%;
         }
-        input[type="submit"] {
+        label{
+          grid-column: 1/span 1;
         }
+
+       /* input[type="submit"] {
+        }*/
+    
       }
     </style>
   </head>
